@@ -23,6 +23,7 @@ float GetTempture::GetTemp(){
         {
             TempFileStream.getline(temp,32);
             cout<<temp<<endl;
+            TempFileStream.close();
             return (float)atoi(temp)/1000;
         }
         else{
